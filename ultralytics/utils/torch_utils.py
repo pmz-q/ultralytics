@@ -407,7 +407,7 @@ def one_cycle(y1=0.0, y2=1.0, steps=100):
 
 def init_seeds(seed=0, deterministic=False):
     """Initialize random number generator (RNG) seeds https://pytorch.org/docs/stable/notes/randomness.html."""
-    random.seed(seed)
+    random.seed = seed
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
